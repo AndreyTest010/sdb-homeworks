@@ -25,10 +25,6 @@ and district not like '% %';`
 `Получите из таблицы платежей за прокат фильмов информацию по платежам, которые выполнялись в промежуток с 15 июня 2005 года по 18 июня 2005 года включительно и стоимость которых превышает 10.00.`
 
 
-\```
-
-Поле для вставки кода...
-
 SELECT \*
 
 FROM payment
@@ -39,9 +35,7 @@ AND amount > 10.00
 
 ORDER BY payment\_date;
 
-\```
-
-![sakila2](https://github.com/AndreyTest010/sdb-homeworks/blob/main/sakila2.jpg)
+[sakila2](https://github.com/AndreyTest010/sdb-homeworks/blob/main/sakila2.jpg)
 
 
 \---
@@ -51,9 +45,6 @@ ORDER BY payment\_date;
 `Получите последние пять аренд фильмов.`
 
 
-\```
-
-Поле для вставки кода...
 
 SELECT \*
 
@@ -63,7 +54,7 @@ ORDER BY rental\_date DESC
 
 LIMIT 5;
 
-\```
+
 
 ![sakila3](https://github.com/AndreyTest010/sdb-homeworks/blob/main/sakila3.jpg)
 
@@ -78,9 +69,6 @@ LIMIT 5;
 замените буквы 'll' в именах на 'pp'.`
 
 
-\```
-
-Поле для вставки кода...
 
 SELECT replace(lower(first\_name), 'll', 'pp') AS first\_name,
 
@@ -92,7 +80,7 @@ WHERE (first\_name = 'Kelly' OR first\_name = 'Willie')
 
 AND active = 1;
 
-\```
+
 
 ![sakila4](https://github.com/AndreyTest010/sdb-homeworks/blob/main/sakila4.jpg)
 
@@ -100,10 +88,6 @@ AND active = 1;
 
 `Выведите Email каждого покупателя, разделив значение Email на две отдельных колонки: в первой колонке должно быть значение, указанное до @, во второй — значение, указанное после @.`
 
-
-\```
-
-Поле для вставки кода...
 
 SELECT
 
@@ -113,7 +97,7 @@ SUBSTRING\_INDEX(email, '@', -1) AS email\_posle
 
 FROM customer;
 
-\```
+
 
 ![sakila5](https://github.com/AndreyTest010/sdb-homeworks/blob/main/sakila5.jpg)
 
@@ -123,9 +107,6 @@ FROM customer;
 `Доработайте запрос из предыдущего задания, скорректируйте значения в новых колонках: первая буква должна быть заглавной, остальные — строчными.`
 
 
-\```
-
-Поле для вставки кода...
 
 SELECT
 
@@ -135,6 +116,5 @@ CONCAT(UPPER(LEFT(SUBSTRING\_INDEX(email, '@', -1), 1)), LOWER(SUBSTRING(SUBSTRI
 
 FROM customer;
 
-\```
 
 ![sakila6](https://github.com/AndreyTest010/sdb-homeworks/blob/main/sakila6.jpg)
