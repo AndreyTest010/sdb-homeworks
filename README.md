@@ -9,15 +9,9 @@
 
 
 \```
-
-Поле для вставки кода...
-
 select district
-
 from address
-
 where district like 'K%a' and district not like '% %';
-
 \```
 
 ![sakila1](https://github.com/AndreyTest010/sdb-homeworks/blob/main/sakila1.jpg)
