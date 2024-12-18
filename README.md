@@ -7,13 +7,13 @@
 
 `Получите уникальные названия районов из таблицы с адресами, которые начинаются на “K” и заканчиваются на “a” и не содержат пробелов.`
 
-`select district
+select district
 
 from address
 
 where district like 'K%' 
 and district like '%a'
-and district not like '% %';`
+and district not like '% %';
 
 ![sakila1](https://github.com/AndreyTest010/sdb-homeworks/blob/main/sakila1.jpg)
 
