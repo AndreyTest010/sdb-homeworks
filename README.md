@@ -37,7 +37,7 @@ AND amount > 10.00
 
 ORDER BY payment\_date;
 
-[sakila2](https://github.com/AndreyTest010/sdb-homeworks/blob/main/sakila2.jpg)
+![sakila2](https://github.com/AndreyTest010/sdb-homeworks/blob/main/sakila2.jpg)
 
 
 \---
