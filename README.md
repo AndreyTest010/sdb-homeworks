@@ -12,7 +12,9 @@ select district
 from address
 
 where district like 'K%' 
+
 and district like '%a'
+
 and district not like '% %';
 
 ![sakila1](https://github.com/AndreyTest010/sdb-homeworks/blob/main/sakila1.jpg)
